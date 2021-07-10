@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Nunito', sans-serif;
+
+  
+}
+p,li,a,span{
+    font-family: 'Rubik', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+.mid-content{
+    max-width: 1100px;
+    margin: auto;
+}
+.clear-fix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* topbar-css */
+
+
+.topbar{
+    background: #1e3156;
+  padding: 15px 0;
+}
+/* topmenu1 */
+.topmenu1{
+    float: left;
+    width: 60%;
+
+}
+.topmenu1 ul{}
+.topmenu1 li{
+    display: inline-block;
+}
+.topmenu1 ul li a{
+    text-decoration: none;
+    color: #ddd;
+    display: inline-block;
+}
+
+
+
+.topmenu2{
+    float: right;
+    width: 20%;
+}
+.topmenu2 ul{ 
+    float: left;
+}
+.topmenu2 ul li{
+    display: inline-block;
+}
+.topmenu2 ul li a{
+    text-decoration: none;
+    color: #ddd;
+    display: inline-block;
+}
+ .button{
+   
+}
+.topmenu2 .button a{
+    text-decoration: none;
+    color: #ddd;
+    background: #149dd4;
+    display: inline-block;
+}
+
+
+
+
+/* header */
+.header{
+    padding: 20px 0; 
+  
+}
+.mid-content{
+   
+}
+.logo{
+    float: left;
+    width: 15%;
+}
+.logo a img{
+    width: 100px;
+}
+.menu{
+
+ float: left;
+    width: 70%;
+  text-align: center;
+
+}
+.menu ul{
+    z-index: 999;
+}
+.menu ul li{ 
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 60px;
+    padding: 0 20px;
+}
+.menu ul li a{
+    color: #111;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+.menu ul li:hover > a{
+    color: #149dd4;
+}
+.menu ul li a::after{
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    right: -12px;
+    top: 0;
+  
+    font-size: 12px;
+
+    
+}
+.menu ul li a::before{
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    position: absolute;
+    right: -12px;
+   top: 0;
+    font-size: 12px;
+
+    
+}
+.menu ul li:hover a::after{
+display: none;
+}
+
+
+.header-icons{
+    float: left;
+    width: 15%;
+}
+.header-icons ul{}
+.header-icons ul li{
+    display: inline-block;
+    line-height: 60px;
+
+}
+.header-icons ul li a{
+    text-decoration: none;
+    color: #111;
+}
+.menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.menu ul li ul li{
+    display: block;
+}
+/* hero-section */
+.hero-section{
+    background: url(img/ia_400000067.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 344px 0;
+    position: relative;
+}
+.hero-content{
+    text-align: center;
+    position: absolute;
+    top: 98px;
+    left: 414px;
+    
+}
+.hero-heading{
+    margin-bottom: 15px;
+}
+.hero-content h2 {
+    font-size: 39px;
+}
+.hero-content p{
+    color: #4e5255;
+    line-height: 23px;
+}
+.hero-content .hero-btn{
+    margin-top: 20px;
+} 
+.hero-content .hero-btn a {
+	text-decoration: none;
+	color: #ddd;
+	background: #1393c7;
+	display: inline-block;
+	padding: 20px 38px;
+    border-radius: 30px;
+}
+/* .about-css */
+
+.about-section{
+
+}
+.about-us {
+    float: left;
+	background: #e5f2f6;
+	width: 583px;
+	padding: 52px;
+	position: relative;
+	top: -38px;
+	border-radius: 5px;
+
+}
+.about-us h4{
+    text-transform: uppercase;
+    color: #139dd3;
+}
+.about-us h1{
+    margin-bottom: 17px;
+}
+.aboutp {
+
+	line-height: 26px;
+	font-size: 15px;
+}
+
+.aboutsignature{
+    margin-top: 32px;
+}
+
+.signatur-pic{
+    margin-left: 141px;
+}
+.signatur-pic span img{
+
+}
+.signaturp{}
+.signatur-man{
+    float: left;
+}
+.signatur-pic{
+  
+}
+.notification{
+    float: right;
+    width: 360px;
+
+    position: relative;
+top: -38px;
+
+}
+.notification h4{
+    background: #149cd6;
+padding: 11px;
+text-align: center;
+font-size: 19px;
+color: #ddd;
+text-transform: uppercase;
+}
+.notice1{
+    padding: 21px 22px;
+    background: #e5f2f6;
+    margin-top: 15px;
+}
+.notice-text{
+    float: left;
+    border-right: 1px solid #3895b7;
+    padding-right: 9px;
+    color: #139dd3;
+    font-size: 20px;
+    text-align: center;
+}
+.notice1 p{
+    padding-left: 53px;
+    font-size: 14px;
+}
+
+/* CATEGORIES -CSS */
+
+.catagorice-section{
+    margin-top: 43px;
+    background: #f3f8f9;
+    padding-bottom: 28px;
+}
+.c-mainheadingdiv{}
+
+
+.catagorice-heading{
+    float: left;
+}
+.catagorice-heading h5 {
+    margin-top: 65px;
+    margin-bottom: 11px;
+    font-size: 15px;
+}
+.catagorice-heading h3{
+    font-size: 24px;
+font-weight: 700;
+margin-bottom: 46px
+}
+.catagorice-btn{
+    margin-left: 899px;
+    float: right;
+    margin-top: -93px;
+}
+.catagorice-btn:hover{
+    
+}
+.catagorice-btn a:hover{
+    color: #ddd;
+    background: #139dd3;
+
+}
+
+.catagorice-btn a{
+    text-decoration: none;
+    color: #111;
+    font-size: 13px;
+    border: 1px solid #139dd3;
+    padding: 13px 26px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+/* categories-item */
+.categories-item{
+
+}
+.c-box{
+    float: left;
+    width: 31.33%;
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 20px 0 #e5f0f2;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 19px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.c-box:hover{
+    color: #ddd;
+    background: #139dd3;
+
+}
+.c-icon{
+    float: left;
+    background: #ccebf5;
+    width: 65px;
+height: 65px;
+border-radius: 50%;
+margin-right: 33px;
+margin-left: 13px;
+}
+.c-icon img {
+    position: relative;
+    top: 14px;
+    left: 16px;
+}
+.c-content{
+    margin-top: 7px;
+}
+.c-content h4{}
+.c-content p{
+    font-size: 14px
+}
+/* courses-css */
+.c-main-heading {
+    margin-top: 79px;
+}
+
+.courses-heading{
+    float: left;
+    width: 70%;
+}
+.courses-btn{
+    float: right;
+    width: 30%;
+ 
+}
+.courses-btn a {
+	border: 1px solid #139dd3;
+	margin-left: 123px;
+	display: inline-block;
+	padding: 13px 29px;
+	border-radius: 30px;
+	text-decoration: none;
+    color: #111;
+    transition: .4s;
+}
+.courses-btn a:hover{
+    color: #ddd;
+    background: #139dd3;
+}
+.courses-item{
+   
+}
+.courses-box{
+    float: left;
+    
+    box-sizing: border-box;
+    padding: 13px;
+    border: 1px solid #f9f6f3;
+    margin-left: 33px;
+    width: 30.33%;
+    margin-bottom: 24px;
+  
+    
+}
+.courses-box .imgdiv{
+   text-align: center;
+   width: 281px;
+   height: 177px;
+   padding: 11px;
+  
+}
+.courses-box .imgdiv img{
+
+}
+.developul{
+    margin-left: 11px;
+}
+.developul li{
+    display: inline-block;
+    margin-top: 15px;
+}
+.developul li strong{
+    background: #139dd3;
+padding: 4px 13px;
+border-radius: 3px;
+color: #fff;
+}
+.developul li p{
+    margin-left: 10px;
+font-size: 14px;
+}
+
+/* .develop-left{
+    float: left;
+}
+.develop-right{
+    float: right;
+} */
+/* .develop p{} */
+.courses-box h4{
+    margin-left: 11px;
+    margin-top: 18px;
+font-size: 20px;
+margin-bottom: 33px;
+}
+.coursesbottomitem{}
+.coursesul{
+    float: left;
+    margin-left: 11px;
+}
+.coursesul li{}
+.coursesul li p{}
+.coursesul .user{}
+.coursesul .star{
+    color: #f4b714;
+}
+.coursesbottomitem .coursesul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+}
+.coursesbottomitem .coursesul li p{}
+ .courses-tiricon{
+     float: right;
+ }
+.coursesbottomitem .courses-tiricon a{
+    color: #111;
+   
+}
+.courses-tiricon {
+	float: right;
+	border: 1px solid #139dd3;
+	padding: 7px 13px;
+	border-radius: 4px;
+	margin-top: -5px;
+}
+/* admission */
+.admission-section{
+    background: #f3f8f9;
+}
+.admission-left{
+    float: left;
+    width: 48%;
+}
+.admission-right{
+    float: right;
+    width: 46%;
+    margin-top: 90px;
+}
+
+.admission-right h2{
+    margin-bottom: 20px;
+}
+.admission-right p {
+	font-size: 13px;
+	margin-right: 154px;
+    margin-bottom: 41px;
+line-height: 22px;
+}
+.admission-right .admission-btn{}
+.admission-right .admission-btn a{
+    text-decoration: none;
+padding: 13px 37px;
+background: #139dd3;
+font-size: 14px;
+border-radius: 30px;
+color: #fff;
+}
+/* notification */
+.friquently-section{
+    margin-top: 97px;
+    
+}
+.frequently-left {
+	float: left;
+	width: 39%;
+	
+	padding: 49px;
+}
+.frequently-left h2 {
+	margin-bottom: 32px;
+}
+.frequently-maindiv{
+    background: #f3f8f9;
+}
+.frequently-right{
+    float: right;
+    width: 52%;
+    position: relative;
+   
+}
+.frequently-right .frequently-img {
+	background: url(img/ia_400000069.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 258px 0;
+	margin-right: 51px;
+}
+.frequently-right .frequently-img img{}
+.frequently-right .icondiv{ 
+    position: absolute;
+    top: 46%;
+    left: 40%;
+    width: 62px;
+height: 62px;
+background: #139dd3;
+border-radius: 50%;
+}
+.frequently-right .icondiv a {
+	font-size: 41px;
+	color: #fff;
+}
+.notificationdiv {
+	background: #139dd3;
+	padding: 16px 38px;
+	border-radius: 4px 4px 0 0;
+    margin-bottom: 18px;
+}
+.notificationicon{
+    float: left;
+}
+.notificationicon span i{}
+.notificationp {
+	float: right;
+	margin-right: 116px;
+}
+.boro-p {
+	font-size: 14px;
+	color: #868684;
+    margin-bottom: 32px;
+}
+.notificationul ul {
+	padding: 18px 0;
+	box-shadow: 1px 1px 5px #f4e5e5;
+	background: #fff;
+	margin: 24px 4px;
+}
+.notificationul ul li{
+    display: inline-block;
+    margin-left: 16px;
+}
+.notificationul ul li span{}
+.notificationul ul li p {
+	font-size: 13px;
+	font-weight: 500;
+}
+
